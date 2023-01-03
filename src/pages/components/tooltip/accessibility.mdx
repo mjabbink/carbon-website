@@ -73,22 +73,22 @@ interactive (it can’t be clicked or acted upon).
 
 ### Annotate the text for the tooltip
 
-Except for icon buttons with clearly pre-established names or functions (such as
-Bold and Italics), every tooltip should be annotated by the designer so the
-developer knows what text to use. See
-[Usage](https://carbondesignsystem.com/components/tooltip/usage) for information
-on the length and styling of tooltip content, whether for icon-buttons or for
-definitions.
 
-<Row>
-<Column colLg={8}>
+If designers do not specify the text, tooltips are less likely to be implemented by developers. Every icon-only button should have a tooltip. Designers can provide the text by using a tooltip in their designs or simply [annotating the icon-only button](https://carbondesignsystem-2xrdev89e-carbon-design-system.vercel.app/components/button/accessibility#labeling). For definition tooltips, see the [Usage](https://carbondesignsystem.com/components/tooltip/usage) page for information on the length and styling for tooltip content.
 
-![annotation shows the text of the tooltip](images/tooltip-accessibility-3.png)
+<DoDontRow>
+  <DoDont type="do" caption="Specify the text that will appear in the tooltip.">
 
-<Caption>Specify the text that will appear in the tooltip.</Caption>
+![icons have tooltips 'search' and 'switch sites'](images/tooltip-accessibility-3-do.png)
 
-</Column>
-</Row>
+  </DoDont>
+
+  <DoDont type="dont" caption="Do not use icon-only buttons with no tooltip or name annotated.">
+
+![icon buttons in the top navigation do not have tooltips or annotations](images/tooltip-accessibility-3-dont.png)
+
+  </DoDont>
+</DoDontRow>
 
 ## Development considerations
 
